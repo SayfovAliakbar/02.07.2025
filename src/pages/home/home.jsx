@@ -11,6 +11,14 @@ import video3 from "../../assets/Mask group (5).png"
 import photo2 from "../../assets/IMG_3107 1.png"
 import sert from "../../assets/image 2.png"
 import photo3 from "../../assets/DSCF9619 2.png"
+import { Carousel } from 'antd';
+const contentStyle = {
+  height: '500px',
+  color: '#fff',
+  lineHeight: '160px',
+  textAlign: 'center',
+  background: '#364d79',
+};
 
 const Home = () => {
 
@@ -255,13 +263,36 @@ const Home = () => {
 
       <h1 className='text-[40px] text-center'><b>{t("Sections2.14")}</b></h1>
       <br/>
-      <div className='flex justify-around items-center flex-wrap gap-[50px]'>
+      {/* <div className='flex justify-around items-center flex-wrap gap-[50px]'>
         <img src={someone} alt="" />
         <img src={someone} alt="" />
         <img src={someone} alt="" />
         <img src={someone} alt="" />
+        <img src={someone} alt="" />
+      </div> */}
+
+      <Carousel autoplay={{ dotDuration: true }} autoplaySpeed={2000}>
+    <div>
+      <div style={contentStyle}>
         <img src={someone} alt="" />
       </div>
+    </div>
+    <div>
+      <div style={contentStyle}>
+        <img src={someone} alt="" />
+      </div>
+    </div>
+    <div>
+      <div style={contentStyle}>
+        <img src={someone} alt="" />
+      </div>
+    </div>
+    <div>
+      <div style={contentStyle}>
+        <img src={someone} alt="" />
+      </div>
+    </div>
+  </Carousel>
 
       <br/><br/><br/>
 
